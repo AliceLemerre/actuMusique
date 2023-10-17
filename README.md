@@ -3,4 +3,4 @@ Un site pour se tenir à jour sur l'actualité de son groupe de musique préfér
 Alice LEMERRE
 Maëckel DAMATOR
 Nadime NEFFATI
-Meriem HADI
+Meriem HADI :)
