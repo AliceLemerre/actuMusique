@@ -1,0 +1,8 @@
+routes:
+    # - url: /
+    #   controller: public/controller/TestController
+    #   action: base # ici c'est la fonction dans le controller
+
+    - url: /test
+      controller: public/controller/TestController
+      action: display

@@ -4,3 +4,19 @@ Alice LEMERRE
 Maëckel DAMATOR
 Nadime NEFFATI
 Meriem HADI :)
+
+        ==================
+        | Mode d'emplois |
+        ==================
+
+pour lancer docker il faut avoir docker desktop et lancer les commande :
+
+     - docker compose build
+ 
+ puis pour lancer apache: 
+
+     - docker compose up
+
+ et pour fermer apache : 
+
+     - docker compose down
