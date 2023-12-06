@@ -1,0 +1,54 @@
+.button{
+    --bg-color: var(--light-beige);
+    --bg-hover-color: var(--light-beige);
+ padding: rem(8) rem(25);
+ border-radius: rem(60);
+ text-decoration: none;
+ cursor: pointer;
+ font-family: var(--main-font);
+ font-weight: 400;
+ font-size: rem(16);
+ line-height: rem(18);
+ border: rem(1) solid var(--black);
+ background-color: var(--bg-color);
+ color: var(--black);
+ transition: all var(--transition-duration);
+
+&:hover, &:focus{
+   border: rem(2) solid var(--black);
+   font-weight: 600;
+}
+
+/*modificateurs de couleurs
+ &-primary{
+    --bg-color: var(--blue);
+    --bg-hover-color: var(--blue-darker);
+
+ }
+ &-secondary{
+    background-color: var(--grey);
+    --bg-hover-color: var(--grey-darker);
+
+ }
+ &-danger{
+    background-color: var(--red);
+    --bg-hover-color: var(--red-darker);
+
+ }
+
+ //modificateurs de taille
+ &-lg{
+    padding: rem(16) rem(24);
+ }*/
+ &-sm{
+    padding: rem(2) rem(10);
+    font-size: rem(11);
+    line-height: rem(18);
+ }
+
+ &-nav-active{
+   --bg-color: var(--orange);
+   border: none;
+}
+}
+

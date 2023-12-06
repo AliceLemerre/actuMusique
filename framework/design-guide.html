@@ -1,0 +1,156 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>design guide</title>
+    <link rel="stylesheet" type="text/css" href="dist/css/main.css">
+    <style> body > section {margin-bottom: 5rem;} .content{background-color: rgb(255, 179, 214); padding: 0.75rem; margin: 1rem;}</style>
+</head>
+
+
+<body class="grid">
+
+
+
+    <section>
+        <h1>.banner</h1>
+        <div class="banner banner-text" style="background-image: url('/actuMusique/framework/assets/images/header-default\ 1.png')">
+           <div class="card col-4">
+             <p>Avec Actumusique, créez un site pour tenir les fans à jour sur l'actualité de votre groupe de musique préféré, enregistrer ses prochains évènements, se renseigner sur le groupe et ses œuvres, s'organiser pour se rencontrer aux concerts.</p>
+           <div> <a href="#" class="button button-primary">découvrir l'artiste</a></div>
+            </div>
+        </div> 
+    </section>
+
+    
+
+
+    <h1>.button</h1>
+    <p>
+        <button class="button button-lg button-primary">button</button>   
+        <button class="button button-nav-active">button</button>   
+        <button class="button button-sm button-primary">button</button>   
+    </p>
+
+    <ul class="interactions-list">
+        <li><a href="" class="interaction interaction-share">a</a></li>
+        <li><a href="" class="interaction interaction-like">a</a></li>
+        <li><a href="" class="interaction interaction-save">a</a></li>
+    </ul>
+
+    <div class="row">
+    <article class="card card-article col-7">
+        <header class="card-header card-article-header">
+            <h1>Titre de l'article</h1>
+            <p>date posted</p>
+        </header>
+        <div class="card-content card-article-content">
+            <div class="card-image">
+                <img src="assets/images/img-default.png" alt="image placeholder article">
+            </div>
+            <div class="card-infos card-article-infos"> 
+                <p>Ceci est un article, écrivez y ce que vous voulez. Actualité, billet d’humeur, résumé de
+                    concert... à vous de jouer !</p>
+                <a href="#" class="button button-primary">lire la suite</a>
+            </div>
+        </div>
+
+        <footer class="card-footer card-footer-article">
+            <a href="#">xx commentaires</a>
+            <p>par <a href="#">utilisateur54</a></p>
+            <ul class="interactions-list">
+                <li><a href="" class="interaction interaction-share">a</a></li>
+                <li><a href="" class="interaction interaction-like">a</a></li>
+                <li><a href="" class="interaction interaction-save">a</a></li>
+            </ul>
+        </footer>
+    </article>
+</div>
+
+
+    <article class="card card-event col-7">
+        <header class="card-header card-event-header">
+            <h1>Titre de l'évènement</h1>
+            <p>15 janvier 2023 - La Vilette - Paris (75)</p>
+        </header>
+
+        <div class="card-content card-article-content">
+            <div class="card-image" >
+                <img src="assets/images/img-default.png" alt="image placeholder article">
+            </div>
+            <div class="card-infos card-event-infos">
+                <p>Ceci est un post d’évènement. Publiez l’intitulé, la date, le lieu et permettez aux utilisateurs
+                    de l’enregistrer dans leur calendrier et de s’organiser pour...</p>
+                <a href="#" class="button button-primary">lire la suite</a>
+            </div>
+        </div>
+
+        <footer class="card-footer card-event-footer">
+            <p>date posted</p>
+            <a class="button button-sm button-add-calendar" href="#">ajouter à mon calendrier</a>
+            <ul class="interactions-list">
+                <li><a href="" class="interaction interaction-share">a</a></li>
+                <li><a href="" class="interaction interaction-like">a</a></li>
+                <li><a href="" class="interaction interaction-save">a</a></li>
+            </ul>
+        </footer>
+    </article>
+
+
+
+
+
+<section>
+    <h1>.grid</h1>
+    <div class="grid">
+        <div class="row">
+            <div class="col-2"><div class="content">col 2</div></div>
+            <div class="col-2"><div class="content">col 2</div></div>
+            <div class="col-8"><div class="content">col 8</div></div>
+        </div>
+
+        <div class="row">
+            <div class="col-12"><div class="content">col 1</div></div>
+        </div>
+
+        <div class="row">
+            <div class="col-4"><div class="content">col 4</div></div>
+            <div class="col-4"><div class="content">col 4</div></div>
+            <div class="col-4"><div class="content">col 4</div></div>
+        </div>
+
+        <div class="row">
+            <div class="col-6"><div class="content">col 6</div></div>
+            <div class="col-6"><div class="content">col 6</div></div>
+        </div>
+
+        <div class="row">
+            <div class="col-3"><div class="content">col 3</div></div>
+            <div class="col-3"><div class="content">col 3</div></div>
+            <div class="col-3"><div class="content">col 3</div></div>
+            <div class="col-3"><div class="content">col 3</div></div>
+
+        </div>
+
+    </div>
+</section>
+
+
+<section class="card card-comments">
+    <header class="card-header">
+      <div>  <p>utilisateur 17</p></div>
+        <p>26/02/2023 à 9h15</p>
+    </header>
+    <div>
+        <p>Bonjour c’est vraiment super, cet article est génial et très instructif</p>
+        <a href="">signaler le commentaire</a>
+    </div>
+
+
+</section>
+
+
+</body>
+</html>
