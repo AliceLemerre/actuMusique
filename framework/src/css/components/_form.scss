@@ -1,0 +1,29 @@
+.card-form{
+    display: flex;
+    flex-direction: column;
+    padding: rem(50) rem(30);
+    position: relative;
+
+    form{
+        padding: rem(50) rem(30);
+
+
+    }
+ 
+    input{
+        margin-bottom: rem(10);
+    }
+
+    button{
+        position: absolute;
+        bottom: rem(20);
+        right: rem(20);
+    }
+
+    &-stay-logged{
+        position: absolute;
+        bottom: rem(20);
+        left: rem(20);
+    }
+   
+}

@@ -92,8 +92,10 @@ img {
   --bg-color: var(--red);
   --bg-hover-color: var(--red-darker);
   display: inline-block;
-  padding: 0.25rem 0.5rem;
-  border-radius: 3.125rem;
+  width: 1.25rem;
+  height: 1.25rem;
+  padding: 0.25rem;
+  border-radius: 5rem;
   text-decoration: none;
   cursor: pointer;
   line-height: 1.125rem;
@@ -103,6 +105,10 @@ img {
 }
 .interaction:hover, .interaction:focus {
   background-color: var(--bg-hover-color);
+}
+.interaction img {
+  height: 0.9375rem;
+  padding: 0.125rem 0.125rem;
 }
 .interaction-share {
   --bg-color: var(--pink);
@@ -118,7 +124,7 @@ img {
 }
 
 .banner {
-  aspect-ratio: 100/38;
+  aspect-ratio: 100/30;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -212,7 +218,6 @@ img {
   justify-content: center;
   border-bottom: solid 1px var(--black);
   padding: 0.3125rem;
-  position: relative;
 }
 .card-header h1 {
   font-weight: 600;
@@ -222,8 +227,10 @@ img {
   text-align: center;
 }
 .card-header p {
-  position: absolute;
   right: 0.9375rem;
+}
+.card-header-date-posted {
+  margin-left: auto;
 }
 .card img {
   overflow: hidden;
@@ -232,8 +239,10 @@ img {
   max-width: 12.5rem;
 }
 .card-image {
-  height: 12.5rem;
   padding: 0.9375rem;
+}
+.card-image-album p {
+  text-align: center;
 }
 .card-content {
   display: flex;
@@ -272,6 +281,11 @@ img {
 .card-footer .interactions-list li {
   margin: 0 0.25rem;
 }
+.card-header-event-link {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
 .card-event {
   /*
        &::after{
@@ -290,6 +304,131 @@ img {
 .card-event-header *:not(img) {
   position: relative;
   line-height: 0.2;
+}
+
+.card-form {
+  display: flex;
+  flex-direction: column;
+  padding: 3.125rem 1.875rem;
+  position: relative;
+}
+.card-form form {
+  padding: 3.125rem 1.875rem;
+}
+.card-form input {
+  margin-bottom: 0.625rem;
+}
+.card-form button {
+  position: absolute;
+  bottom: 1.25rem;
+  right: 1.25rem;
+}
+.card-form-stay-logged {
+  position: absolute;
+  bottom: 1.25rem;
+  left: 1.25rem;
+}
+
+.card-section-tabs * {
+  box-sizing: border-box;
+}
+.card-section-tabs *:focus, .card-section-tabs input:focus + label {
+  outline: none;
+}
+.card-section-tabs body {
+  padding: 1.875rem 1.25rem;
+  background: var(--light-beige);
+  color: var(--black);
+}
+.card-section-tabs main {
+  margin: auto;
+}
+.card-section-tabs .tabs {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto 0.625rem;
+}
+.card-section-tabs .radiotab {
+  position: absolute;
+  opacity: 0;
+}
+.card-section-tabs .label {
+  width: 100%;
+  padding: 0.5625rem;
+  background: var(--light-beige);
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s;
+  border: none;
+  text-align: center;
+}
+.card-section-tabs .label:hover {
+  background: var(--beige);
+}
+.card-section-tabs .label:active {
+  background: var(--beige);
+}
+.card-section-tabs .radiotab:checked + .label {
+  border: solid 1px var(--black);
+  border-bottom: none;
+}
+.card-section-tabs .radiotab:checked + .label:first-of-type {
+  border-left: none;
+}
+.card-section-tabs .radiotab:checked + .label:last-of-type {
+  border-right: none;
+}
+.card-section-tabs .panel {
+  display: none;
+  padding: 0.625rem 1.25rem 1.25rem;
+  width: 100%;
+  border-bottom: solid 1px var(--black);
+}
+.card-section-tabs .radiotab:checked + .label + .panel {
+  display: block;
+}
+@media (min-width: 600px) {
+  .card-section-tabs .panel {
+    order: 99;
+  }
+  .card-section-tabs .label {
+    width: 33.33%;
+    border-bottom: solid 1px var(--black);
+  }
+}
+
+.card-event-link a {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  color: var(--black) header div;
+  color-display: block;
+}
+
+.nav {
+  display: flex;
+  justify-content: flex-end;
+}
+.nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 40%;
+}
+
+main {
+  position: relative;
+}
+
+.side-column {
+  position: absolute;
+  right: 0;
+  top: 0;
+  border: solid 1px var(--black);
+  background: var(--light-beige);
+  font-family: "Poppins", sans-serif;
+  color: var(--black);
 }
 
 /*# sourceMappingURL=main.css.map */

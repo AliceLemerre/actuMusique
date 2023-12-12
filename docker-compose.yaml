@@ -5,6 +5,6 @@ services:
       context: ./site  #  ici j'indique le chemin pour build l'image
       dockerfile: Dockerfile # ici j'indique le fichier a utiliser
     ports:
-      - "8080:80"  # ici je relie le port 80 de la machine virtuelle au port 8080 d'apache
+      - "5050:80"  # ici je relie le port 80 de la machine virtuelle au port 8080 d'apache
     volumes:
       - ./public:/var/www/html 

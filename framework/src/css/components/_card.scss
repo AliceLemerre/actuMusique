@@ -12,7 +12,6 @@
         justify-content: center;
         border-bottom: solid 1px var(--black);
         padding: rem(5);
-        position: relative;
 
         h1{
             font-weight: 600;
@@ -23,8 +22,11 @@
         }
 
         p{
-            position: absolute;
             right: rem(15);
+        }
+
+        &-date-posted{
+           margin-left: auto;
         }
     }
 
@@ -36,8 +38,15 @@
     }
 
     &-image{
-        height: rem(200);
         padding: rem(15);
+
+        
+    &-album{
+
+        p{
+            text-align: center ;
+        }
+    }
     }
 
     &-content{
@@ -58,6 +67,7 @@
         right: rem(15);
 
         }
+
 
     
 
@@ -98,18 +108,31 @@
     
     }
 
+    &-header-event-link{
+        
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+    }
 
 
     &-event{
         &-header{
             flex-direction: column;
 
+
          *:not(img) {
             position: relative;
             line-height: 0.2;
             
         }
+
+
+    
+
     }
+
+    
 /*
      &::after{
             content: '';

@@ -6,8 +6,11 @@
    --bg-color: var(--red);
    --bg-hover-color: var(--red-darker);
    display: inline-block;
- padding: rem(4) rem(8);
- border-radius: rem(50);
+ width: rem(20);
+ height: rem(20);
+ padding: rem(4);
+
+ border-radius: rem(80);
  text-decoration: none;
  cursor: pointer;
  line-height: rem(18);
@@ -17,8 +20,16 @@
 
 &:hover, &:focus{
    background-color: var(--bg-hover-color);
+
+ 
 }
 
+
+img{
+   height: rem(15);
+   padding: rem(2) rem(2);
+   
+}
 //modificateurs de couleurs
  &-share{
     --bg-color: var(--pink);

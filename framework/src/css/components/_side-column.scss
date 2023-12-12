@@ -1,0 +1,13 @@
+main{
+    position: relative; 
+}
+.side-column{
+    position: absolute;
+    right: 0;
+    top: 0;
+    border: solid 1px var(--black);
+    background: var(--light-beige);
+    font-family: $font1;
+    color: var(--black);
+
+}
